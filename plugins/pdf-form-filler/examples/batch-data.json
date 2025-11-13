@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "+1-555-0123",
+    "agreeToTerms": true
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "phone": "+1-555-0124",
+    "agreeToTerms": true
+  },
+  {
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.j@example.com",
+    "phone": "+1-555-0125",
+    "agreeToTerms": false
+  }
+]

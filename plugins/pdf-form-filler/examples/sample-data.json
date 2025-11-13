@@ -1,0 +1,15 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phone": "+1-555-0123",
+  "address": "123 Main Street",
+  "city": "San Francisco",
+  "state": "CA",
+  "zipCode": "94102",
+  "country": "USA",
+  "agreeToTerms": true,
+  "subscribeNewsletter": false,
+  "preferredContact": "email",
+  "comments": "This is a sample form submission"
+}
