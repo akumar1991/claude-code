@@ -16,6 +16,8 @@
 import { PDFDocument, PDFTextField, PDFCheckBox, PDFDropdown, PDFRadioGroup } from 'pdf-lib';
 import * as fs from 'fs';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
 export interface FormFieldData {
   name: string;
@@ -237,7 +239,15 @@ export function loadFormDataFromCsv(csvPath: string): Array<Record<string, strin
 }
 
 // CLI interface when run directly
-if (require.main === module) {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const isMainModule = process.argv[1] && (
+  process.argv[1] === __filename ||
+  process.argv[1].endsWith('pdf-form-filler.ts')
+);
+
+if (isMainModule) {
   const args = process.argv.slice(2);
 
   if (args.length < 1) {

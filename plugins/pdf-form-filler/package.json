@@ -2,6 +2,7 @@
   "name": "@claude-code/pdf-form-filler",
   "version": "1.0.0",
   "description": "Fill out PDF forms programmatically with Claude Code",
+  "type": "module",
   "main": "lib/pdf-form-filler.ts",
   "scripts": {
     "extract": "ts-node lib/pdf-form-filler.ts extract",
