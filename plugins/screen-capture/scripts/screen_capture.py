@@ -286,7 +286,7 @@ def main():
     parser.add_argument("-x", type=int, help="Region X coordinate")
     parser.add_argument("-y", type=int, help="Region Y coordinate")
     parser.add_argument("-w", "--width", type=int, help="Region width")
-    parser.add_argument("-h", "--height", type=int, help="Region height", dest="height")
+    parser.add_argument("--height", type=int, help="Region height")
     parser.add_argument("-i", "--image", help="Image path for OCR")
     parser.add_argument("-l", "--lang", default="eng", help="OCR language (default: eng)")
     parser.add_argument("-d", "--dir", default="./screenshots",
