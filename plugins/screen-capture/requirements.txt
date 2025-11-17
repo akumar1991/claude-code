@@ -1,0 +1,19 @@
+# Python dependencies for Screen Capture Plugin
+
+# Screen capture library (cross-platform)
+mss>=9.0.0
+
+# Image processing
+Pillow>=10.0.0
+
+# OCR (Optical Character Recognition)
+pytesseract>=0.3.10
+
+# GUI automation (fallback for some platforms)
+pyautogui>=0.9.54
+
+# Optional: Advanced image processing
+# opencv-python>=4.8.0
+
+# Optional: PDF generation from screenshots
+# reportlab>=4.0.0

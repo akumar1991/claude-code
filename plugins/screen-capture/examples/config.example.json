@@ -1,0 +1,87 @@
+{
+  "screen-capture": {
+    "default_output_dir": "./screenshots",
+    "default_monitor": 1,
+    "default_format": "png",
+    "auto_analyze": false,
+    "auto_ocr": false,
+
+    "desktop_capture": {
+      "enabled": true,
+      "quality": 90,
+      "save_metadata": true
+    },
+
+    "browser_capture": {
+      "enabled": true,
+      "default_viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "wait_for_load": true,
+      "timeout": 30000,
+      "user_agent": null
+    },
+
+    "ocr": {
+      "default_language": "eng",
+      "min_confidence": 60,
+      "supported_languages": [
+        "eng",
+        "fra",
+        "deu",
+        "spa",
+        "ita",
+        "por",
+        "rus",
+        "jpn",
+        "chi_sim",
+        "chi_tra"
+      ]
+    },
+
+    "hooks": {
+      "auto_capture_on_error": {
+        "enabled": false,
+        "analyze": true,
+        "ocr": false,
+        "output_dir": "./error-screenshots"
+      },
+
+      "periodic_capture": {
+        "enabled": false,
+        "interval_minutes": 5,
+        "max_captures_per_session": 20,
+        "output_dir": "./session-screenshots"
+      },
+
+      "capture_on_write": {
+        "enabled": false,
+        "file_patterns": [
+          "*.html",
+          "*.css",
+          "*.tsx",
+          "*.jsx",
+          "*.vue",
+          "*.svelte"
+        ],
+        "analyze": false,
+        "output_dir": "./write-screenshots"
+      }
+    },
+
+    "analysis": {
+      "default_mode": "quick",
+      "auto_save_analysis": false,
+      "analysis_output_dir": "./screenshot-analysis"
+    },
+
+    "storage": {
+      "organize_by_date": true,
+      "date_format": "%Y-%m-%d",
+      "max_screenshots": 100,
+      "auto_cleanup": false,
+      "compress_old_screenshots": false
+    }
+  }
+}

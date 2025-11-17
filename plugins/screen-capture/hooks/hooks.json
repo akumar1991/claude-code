@@ -1,0 +1,52 @@
+{
+  "hooks": [
+    {
+      "name": "auto-capture-on-error",
+      "description": "Automatically capture screenshot when error-related commands are run",
+      "event": "PostToolUse",
+      "matcher": {
+        "type": "Bash",
+        "pattern": "(error|fail|exception|bug|crash)",
+        "flags": "i"
+      },
+      "handler": "./auto_capture.py",
+      "config": {
+        "enabled": false,
+        "mode": "on-error",
+        "analyze": true,
+        "ocr": false,
+        "output_dir": "./error-screenshots"
+      }
+    },
+    {
+      "name": "periodic-capture",
+      "description": "Periodically capture screenshots during development sessions",
+      "event": "PostToolUse",
+      "matcher": {
+        "type": "*"
+      },
+      "handler": "./periodic_capture.py",
+      "config": {
+        "enabled": false,
+        "interval_minutes": 5,
+        "max_captures_per_session": 20,
+        "output_dir": "./session-screenshots"
+      }
+    },
+    {
+      "name": "capture-on-write",
+      "description": "Capture screenshot after significant file writes (optional)",
+      "event": "PostToolUse",
+      "matcher": {
+        "type": "Write"
+      },
+      "handler": "./capture_on_write.py",
+      "config": {
+        "enabled": false,
+        "file_patterns": ["*.html", "*.css", "*.tsx", "*.jsx"],
+        "analyze": false,
+        "output_dir": "./write-screenshots"
+      }
+    }
+  ]
+}

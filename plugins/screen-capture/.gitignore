@@ -1,0 +1,51 @@
+# Screenshots and output directories
+screenshots/
+error-screenshots/
+session-screenshots/
+write-screenshots/
+screenshot-analysis/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# State files
+.claude-code/screen-capture-state.json
+
+# Temporary files
+*.tmp
+*.temp

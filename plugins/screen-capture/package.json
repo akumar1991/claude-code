@@ -1,0 +1,36 @@
+{
+  "name": "@claude-code/screen-capture",
+  "version": "1.0.0",
+  "description": "Comprehensive screen, browser, and application capture with AI-powered analysis",
+  "main": "scripts/browser_capture.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-deps": "npm install",
+    "setup": "npm install && pip3 install -r requirements.txt"
+  },
+  "keywords": [
+    "screenshot",
+    "screen-capture",
+    "browser-automation",
+    "puppeteer",
+    "ocr",
+    "claude",
+    "ai-analysis"
+  ],
+  "author": "Claude Code Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthropics/claude-code.git",
+    "directory": "plugins/screen-capture"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "screen-capture",
+  "displayName": "Screen Capture & Analysis",
+  "version": "1.0.0",
+  "description": "Comprehensive screen, browser, and application capture with AI-powered analysis and OCR capabilities",
+  "author": "Claude Code Contributors",
+  "repository": "https://github.com/anthropics/claude-code",
+  "license": "MIT",
+  "tags": ["capture", "screenshot", "ocr", "browser-automation", "vision", "analysis"],
+  "capabilities": [
+    "desktop-screen-capture",
+    "browser-automation",
+    "window-capture",
+    "ocr-text-extraction",
+    "image-analysis",
+    "cross-platform"
+  ],
+  "requirements": {
+    "python": ">=3.8",
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "python": [
+      "mss>=9.0.0",
+      "pillow>=10.0.0",
+      "pytesseract>=0.3.10",
+      "pyautogui>=0.9.54"
+    ],
+    "npm": [
+      "puppeteer>=21.0.0"
+    ],
+    "system": {
+      "linux": ["scrot", "tesseract-ocr"],
+      "macos": ["tesseract"],
+      "windows": ["tesseract"]
+    }
+  }
+}
