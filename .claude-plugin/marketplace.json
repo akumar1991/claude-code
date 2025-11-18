@@ -101,6 +101,17 @@
       },
       "source": "./plugins/frontend-design",
       "category": "development"
+    },
+    {
+      "name": "pdf-form-filler",
+      "description": "Fill out PDF forms programmatically with data from JSON, CSV, or interactive input",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code",
+        "email": "support@anthropic.com"
+      },
+      "source": "./plugins/pdf-form-filler",
+      "category": "productivity"
     }
   ]
 }

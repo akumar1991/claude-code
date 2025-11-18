@@ -1,0 +1,6 @@
+firstName,lastName,email,phone,agreeToTerms,subscribeNewsletter,country
+John,Doe,john.doe@example.com,+1-555-0123,true,false,USA
+Jane,Smith,jane.smith@example.com,+1-555-0124,true,true,Canada
+Bob,Johnson,bob.j@example.com,+1-555-0125,false,false,UK
+Alice,Williams,alice.w@example.com,+1-555-0126,true,false,USA
+Charlie,Brown,charlie.b@example.com,+1-555-0127,true,true,Australia

@@ -1,0 +1,29 @@
+{
+  "name": "@claude-code/pdf-form-filler",
+  "version": "1.0.0",
+  "description": "Fill out PDF forms programmatically with Claude Code",
+  "type": "module",
+  "main": "lib/pdf-form-filler.ts",
+  "scripts": {
+    "extract": "ts-node lib/pdf-form-filler.ts extract",
+    "fill": "ts-node lib/pdf-form-filler.ts fill",
+    "batch": "ts-node lib/pdf-form-filler.ts batch"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "keywords": [
+    "pdf",
+    "forms",
+    "automation",
+    "claude-code",
+    "plugin"
+  ],
+  "author": "Claude Code",
+  "license": "MIT"
+}

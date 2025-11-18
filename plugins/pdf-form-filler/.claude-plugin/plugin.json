@@ -1,0 +1,23 @@
+{
+  "id": "pdf-form-filler",
+  "name": "PDF Form Filler",
+  "version": "1.0.0",
+  "author": "Claude Code",
+  "description": "Fill out PDF forms programmatically with data from JSON, CSV, or interactive input",
+  "tags": ["pdf", "forms", "automation", "documents"],
+  "commands": [
+    {
+      "name": "fill-form",
+      "description": "Fill out a PDF form with provided data"
+    },
+    {
+      "name": "extract-fields",
+      "description": "Extract form field names and types from a PDF"
+    }
+  ],
+  "markers": ["project"],
+  "dependencies": {
+    "node": ">=18.0.0"
+  },
+  "repository": "https://github.com/anthropics/claude-code"
+}
