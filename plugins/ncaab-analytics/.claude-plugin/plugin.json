@@ -1,0 +1,24 @@
+{
+  "name": "ncaab-analytics",
+  "version": "1.0.0",
+  "description": "Advanced NCAA Basketball analytics using KenPom, EvanMiya, and BartTorvik metrics with Global Forecasting Models and ensemble stacking",
+  "author": "Claude Code",
+  "repository": "https://github.com/anthropics/claude-code",
+  "keywords": [
+    "ncaab",
+    "basketball",
+    "analytics",
+    "kenpom",
+    "evanmiya",
+    "barttorvik",
+    "machine-learning",
+    "sports-betting",
+    "forecasting"
+  ],
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  "dependencies": {
+    "python": ">=3.9"
+  }
+}
