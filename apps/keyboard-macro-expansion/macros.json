@@ -1,0 +1,39 @@
+{
+  "description": "Keyboard Macro Expansion Configuration - Edit this file to customize your macros",
+  "trigger_prefix": null,
+  "macros": {
+    "1": "Hello, World!",
+    "2": "Thank you for your email.",
+    "3": "Best regards,",
+    "4": "Please let me know if you have any questions.",
+    "5": "I'll get back to you shortly.",
+    "6": "Looking forward to hearing from you.",
+    "7": "Have a great day!",
+    "8": "As discussed in our previous meeting,",
+    "9": "Please find attached the requested documents."
+  },
+  "_comments": {
+    "usage": "Each key in 'macros' is a trigger key. When pressed, it gets replaced with the value.",
+    "trigger_prefix": "Set to 'ctrl', 'alt', or 'shift' to require that modifier key to be held",
+    "customization": "Add your own key-to-text mappings in the macros section",
+    "special_keys": "You can use 'f1' through 'f12' as trigger keys for function key macros"
+  },
+  "examples": {
+    "email_shortcuts": {
+      "trigger_prefix": "ctrl",
+      "macros": {
+        "e": "myemail@example.com",
+        "p": "+1 (555) 123-4567",
+        "a": "123 Main Street, Anytown, USA 12345"
+      }
+    },
+    "coding_snippets": {
+      "trigger_prefix": "alt",
+      "macros": {
+        "c": "console.log();",
+        "f": "function () {\n  \n}",
+        "i": "if () {\n  \n}"
+      }
+    }
+  }
+}
